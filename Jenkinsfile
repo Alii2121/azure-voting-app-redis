@@ -7,7 +7,7 @@ stages {
         echo '$GIT_BRANCH'
         } 
     }
-stage ("DOCKER BUILD")
+stage ("DOCKER BUILD") {
 steps {
     pwsh(script: 'docker images -a')
     pwsh(script:"""
@@ -20,5 +20,6 @@ steps {
 }
 }
 
+}
 }
 
