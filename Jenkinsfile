@@ -12,7 +12,7 @@ steps {
     sh(script: 'docker images -a')
     sh(script:"""
     docker images -a
-    doctker build -t jenkins-pipeline .
+    docker build -t jenkins-pipeline .
     docker images -a
     cd ..
  """ )
